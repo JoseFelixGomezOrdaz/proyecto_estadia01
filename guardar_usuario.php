@@ -10,7 +10,6 @@ $apellido_p= $_POST['apellido_p'];
 $apellido_m= $_POST['apellido_m'];
 $tipo_u= $_POST['tipo_u'];
 $usuario= $_POST['usuario'];
-$telefono= $_POST['telefono'];
 $password= $_POST['password'];
 $conf_password= $_POST['conf_password'];
 $correo= $_POST['correo'];
@@ -72,7 +71,7 @@ if($password != $conf_password){ ?>
     //header("Location:registro.php");
 }
 $password_cifrada= password_hash($password, PASSWORD_DEFAULT);
-$query= "INSERT INTO usuarios(usuario, nombre, apellido_p, apellido_m, telefono, correo, tipo_usuario, password) VALUES ('$usuario', '$nombre', '$apellido_p', '$apellido_m', '$telefono', '$correo', '$tipo_u', '$password_cifrada')";
+$query= "INSERT INTO usuarios(usuario, nombre, apellido_p, apellido_m, correo, tipo_usuario, password) VALUES ('$usuario', '$nombre', '$apellido_p', '$apellido_m', '$correo', '$tipo_u', '$password_cifrada')";
 if($resultado=mysqli_query($conexion, $query)){
   ?>
   <!DOCTYPE html>

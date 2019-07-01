@@ -5,9 +5,9 @@ body{
   text-align: center;
 }
 
-input[type="text"], input[type="email"], input[type="password"]{
+input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
   outline: none;
-  padding: 20px;
+  padding: 25px;
   display: block;
   width: 300px;
   border-radius: 3px;

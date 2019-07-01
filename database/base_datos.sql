@@ -5,7 +5,6 @@ create database proyecto_estadia;
     nombre varchar(30) not null,
     apellido_p varchar(30) not null,
     apellido_m varchar(30) not null,
-    telefono varchar(10) not null,
     correo varchar(60) not null,
     tipo_usuario varchar(30) not null,
     password varchar(255) not null
