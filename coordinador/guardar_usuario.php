@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php';
+require '../conexion.php';
 session_start();
 $usuario= $_SESSION['username'];
 if($usuario == null || $usuario= ''){

@@ -2,10 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Inicio</title>
-    <!--<img src="assets/img/logo.jpeg" align="right" />-->
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    <link rel="stylesheet" href="assets/css/estilos1.css">
+    
+    <link rel="stylesheet" href="css/estilos1.css">
   </head>
 <?php
 session_start();
@@ -21,7 +19,7 @@ if($usuario == null || $usuario= ''){
       <div class="contenedor">
           <nav><ul>
           <li class="actual"><a href="inicio.php">Inicio</a></li>
-          <li><a href="registro_usuarios.php">Nuevo usuario</a></li>
+          <li><a href="registro.php">Nuevo usuario</a></li>
           <li><a href="cerrar.php">Cerrar sesion</a></li>
           </ul></nav>
 
@@ -35,12 +33,5 @@ if($usuario == null || $usuario= ''){
         </div>
     </seccion>
     </header>
-    <center>
-      <br><br><br>
-      <?php
-        $usuario= $_SESSION['username'];
-        echo "<h1>Bienvenido $usuario </h1>";
-      ?>
-    </center>
   </body>
 </html>

@@ -5,7 +5,7 @@ body{
   text-align: center;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"]{
   outline: none;
   padding: 25px;
   display: block;
@@ -27,4 +27,22 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
   background-color: #00b8eb;
+}
+textarea{
+  outline: none;
+  padding: 25px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
+}
+select{
+  outline: none;
+  padding: 25px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
 }

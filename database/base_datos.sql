@@ -7,12 +7,22 @@ create database proyecto_estadia;
     apellido_m varchar(30) not null,
     correo varchar(60) not null,
     tipo_usuario varchar(30) not null,
+    status varchar(30) not null default 'Activo',
     password varchar(255) not null
   );
 
-
+  create table materia(
+    id_materia int not null primary key auto_increment,
+    usuario varchar(30) not null,
+    nombre_materia varchar(50) not null,
+    periodo varchar(30) not null,
+    carrera varchar(100) not null,
+    grupo varchar(40) not null,
+    FOREIGN KEY (usuario) REFERENCES usuarios (usuario)
+  );
   create table planeacion(
     id_planeacion int not null primary key auto_increment,
+    id_materia int not null,
     usuario varchar(30) not null,
     materia varchar(50) not null,
     numero_unidad varchar(2) not null,
@@ -29,7 +39,9 @@ create database proyecto_estadia;
     evidencia varchar(100) not null,
     ponderacion varchar(4) not null,
     observaciones varchar(255) not null,
-    FOREIGN KEY (usuario) REFERENCES usuarios (usuario)
+    estado varchar(30) not null default 'incompleta',
+    FOREIGN KEY (usuario) REFERENCES usuarios (usuario),
+    FOREIGN KEY (id_materia) REFERENCES materia (id_materia)
     );
 
     create table horario(
@@ -39,16 +51,22 @@ create database proyecto_estadia;
       materia varchar(50) not null,
       lunes_inicio varchar(10),
       lunes_termino varchar(10),
+      lugar_lunes varchar(50),
       martes_inicio varchar(10),
       martes_termino varchar(10),
+      lugar_martes varchar(50),
       miercoles_inicio varchar(10),
       miercoles_termino varchar(10),
+      lugar_miercoles varchar(50),
       jueves_inicio varchar(10),
       jueves_termino varchar(10),
+      lugar_jueves varchar(50),
       viernes_inicio varchar(10),
       viernes_termino varchar(10),
+      lugar_viernes varchar(50),
       sabado_inicio varchar(10),
       sabado_termino varchar(10),
+      lugar_sabado varchar(50),
       FOREIGN KEY (usuario) REFERENCES usuarios (usuario)
     );
 

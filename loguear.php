@@ -18,7 +18,10 @@ if($resultado= mysqli_fetch_array($consulta)){
 $query= "SELECT * FROM usuarios WHERE usuario= '$usuario'";
 if($result=mysqli_query($conexion, $query)){
   while($row= $result->fetch_assoc()){
-    $password_dec= $row['password'] ;
+    $password_dec= $row['password'];
+    $nombre= $row['nombre'];
+    $apellido_p= $row['apellido_p'];
+    $tipo_usuario= $row['tipo_usuario'];
     $password_decifrada= password_verify($password, $password_dec);
   }
 
@@ -45,7 +48,11 @@ $resultado= mysqli_query($conexion, $consulta);
 $filas=mysqli_num_rows($resultado);
 
 if($filas > 0  && $password_decifrada== $password){
-  $_SESSION['username']= $usuario; ?>
+  $_SESSION['username']= $usuario;
+  $_SESSION['nombre']= $nombre;
+  $_SESSION['apellido_p']= $apellido_p;
+  $_SESSION['tipo_usuario']= $tipo_usuario;
+  ?>
   <html>
     <head>
       <meta charset="utf-8">
@@ -54,9 +61,23 @@ if($filas > 0  && $password_decifrada== $password){
     </head>
     <body>
       <script type="text/javascript">
-        alert("<?php $usuario= $_SESSION['username'];
-        echo "Bienvenido $usuario"?>");
-        window.location="inicio.php";
+        alert("<?php $nombre= $_SESSION['nombre'];
+                     $apellido_p= $_SESSION['apellido_p'];
+        echo "Bienvenido $nombre $apellido_p"?>");
+        var tipo_usuario= "<?php echo "$tipo_usuario"; ?>";
+        if (tipo_usuario == 'administrador') {
+            window.location="administrador/inicio.php";
+
+        }else if (tipo_usuario == 'coordinador') {
+           window.location="coordinador/inicio.php";
+        }else if (tipo_usuario == 'profesor'){
+           window.location="profesores/inicio.php";
+
+        }else{
+           window.location="index.php";
+
+        }
+        //window.location="inicio.php";
       </script>
     </body>
   </html>
