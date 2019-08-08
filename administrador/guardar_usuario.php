@@ -8,6 +8,7 @@ if($usuario == null || $usuario= ''){
 $nombre= $_POST['nombre'];
 $apellido_p= $_POST['apellido_p'];
 $apellido_m= $_POST['apellido_m'];
+$grado_estudios= $_POST['grado_estudios'];
 $tipo_u= $_POST['tipo_u'];
 $usuario= $_POST['usuario'];
 $password= $_POST['password'];
@@ -70,7 +71,7 @@ if($password != $conf_password){ ?>
     //header("Location:registro.php");
 }
 $password_cifrada= password_hash($password, PASSWORD_DEFAULT);
-$query= "INSERT INTO usuarios(usuario, nombre, apellido_p, apellido_m, correo, tipo_usuario, password) VALUES ('$usuario', '$nombre', '$apellido_p', '$apellido_m', '$correo', '$tipo_u', '$password_cifrada')";
+$query= "INSERT INTO usuarios(usuario, nombre, apellido_p, apellido_m,grado_estudios, correo, tipo_usuario, password) VALUES ('$usuario', '$nombre', '$apellido_p', '$apellido_m', '$grado_estudios', '$correo', '$tipo_u', '$password_cifrada')";
 if($resultado=mysqli_query($conexion, $query)){
   ?>
   <!DOCTYPE html>
@@ -82,7 +83,7 @@ if($resultado=mysqli_query($conexion, $query)){
     <body>
       <script type="text/javascript">
         alert("Se guarado el usuario");
-        window.location="inicio.php";
+        window.location="usuarios/lista_usuarios.php";
       </script>
     </body>
   </html>

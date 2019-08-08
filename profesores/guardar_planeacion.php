@@ -24,7 +24,6 @@ $usuario= $_SESSION['username'];
 $consulta= "SELECT * FROM materia";
 $resultado= mysqli_query($conexion, $consulta);
 $id_materia=mysqli_num_rows($resultado);
-echo "'$id_materia'";
 //INSERT INTO planeacion (id_materia, usuario, numero_unidad, nombre_unidad, horas_practicas, horas_teoricas, fecha_inic_planec, fecha_ter_planec, fecha_inic_ejec, fecha_ter_ejec, actividades_doc, actividades_estd, inst_evaluac, evidencia, ponderacion, observaciones)VALUES
 //(1, 1, '1', '$nombre_unidad', '23', '15', '2019-07-11', '2019-07-19', '2019-07-30', '2019-08-01', '$actividades_docente', '$actividades_estudiante', '$instrumentos', '$evidencia', '25', '$observaciones');
 $query= "INSERT INTO planeacion (id_materia, usuario, numero_unidad, nombre_unidad, horas_practicas, horas_teoricas, fecha_inic_planec, fecha_ter_planec, fecha_inic_ejec, fecha_ter_ejec, actividades_doc, actividades_estd, inst_evaluac, evidencia, ponderacion, observaciones)VALUES

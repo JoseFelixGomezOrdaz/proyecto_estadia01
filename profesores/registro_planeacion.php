@@ -45,14 +45,14 @@ if($usuario == null || $usuario= ''){
             <td><input type="number" name="horas_practicas"  required placeholder="Horas practicas" min="0" max="200"></td>
           </tr>
           <tr>
-            <td><input type="number" name="horas_teoricas"  required placeholder="Horas teoricas" min="0" max="200"></td>
+            <td><br><input type="number" name="horas_teoricas"  required placeholder="Horas teoricas" min="0" max="200"></td>
             <td><label for="Name">Fecha de inicio de planeacion</label><input type="date" name="fecha_inicio_planeacion"  required  min="2019-01-01" max="2050-12-31"></td>
             <td><label for="Name">Fecha de termino de planeacion</label><input type="date" name="fecha_termino_planeacion"  required  min="2019-01-01" max="2050-12-31"></td>
           </tr>
           <tr>
             <td><label for="Name">Fecha de inicio de ejecucion</label><input type="date" name="fecha_inicio_ejecucion"  required  min="2019-01-01" max="2050-12-31"></td>
             <td><label for="Name">Fecha de termino de ejecucion</label><input type="date" name="fecha_termino_ejecucion"  required  min="2019-01-01" max="2050-12-31"></td>
-            <td><textarea name="actividades_docente" required placeholder="Actividades del docente"></textarea></td>
+            <td><br><textarea name="actividades_docente" required placeholder="Actividades del docente"></textarea></td>
           <tr>
             <td><textarea name="actividades_estudiante" required placeholder="Actividades del estudiante"></textarea></td>
             <td><textarea name="instrumentos_evaluacion" required placeholder="Instrumentos de evaluacion"></textarea></td>

@@ -5,6 +5,7 @@ create database proyecto_estadia;
     nombre varchar(30) not null,
     apellido_p varchar(30) not null,
     apellido_m varchar(30) not null,
+    grado_estudios varchar(30) not null,
     correo varchar(60) not null,
     tipo_usuario varchar(30) not null,
     status varchar(30) not null default 'Activo',
@@ -24,7 +25,6 @@ create database proyecto_estadia;
     id_planeacion int not null primary key auto_increment,
     id_materia int not null,
     usuario varchar(30) not null,
-    materia varchar(50) not null,
     numero_unidad varchar(2) not null,
     nombre_unidad varchar(255) not null,
     horas_practicas int(2) not null,
@@ -80,3 +80,9 @@ create database proyecto_estadia;
       fecha varchar(10) not null,
       FOREIGN KEY (usuario) REFERENCES usuarios (usuario)
     );
+
+
+
+    select * from materia
+    inner join planeacion
+    on materia.id_materia=planeacion.id_materia where materia.usuario=4;

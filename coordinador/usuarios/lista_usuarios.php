@@ -23,7 +23,8 @@ if($usuario == null || $usuario= ''){
     <header>
       <div class="contenedor">
           <nav><ul>
-          <li class="actual"><a href="inicio.php">Inicio</a></li>
+          <li><a href="../inicio.php">Inicio</a></li>
+          <li class="actual"><a href="lista_usuarios.php">Usuarios</a></li>
           <li><a href="../registro_usuarios.php">Nuevo usuario</a></li>
           <li><a href="../../cerrar.php">Cerrar sesion</a></li>
           </ul></nav>

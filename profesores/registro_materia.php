@@ -37,13 +37,19 @@ if($usuario == null || $usuario= ''){
       <center>
         <br><br>
         <h1>Registro De Planeacion</h1>
+        <br><br>
       <table border="0px">
         <thcad>
           <tr>
-            <td><input type="text" name="nombre_materia"  required placeholder="Nombre de la materia" pattern="[A-Z a-z ñ]+"></td>
-            <td><input type="text" name="periodo" required placeholder="Periodo" pattern="[A-Z a-z -]+"></td>
+            <td><br><input type="text" name="nombre_materia"  required placeholder="Nombre de la materia" pattern="[A-Z a-z ñ]+"></td>
+            <td><label for="Name">Periodo</label>
+            <select name="periodo">
+              <option value="enero-abril">Enero-Abril</option>
+              <option value="mayo-agosto">Mayo-Agosto</option>
+              <option value="septiembre-diciembre">Septiembre-Diciembre</option>
+            </select></td>
           <tr>
-            <td><input type="text" name="carrera"  required placeholder="carreara" pattern="[A-Z a-z ñ]+"></td>
+            <td><br><input type="text" name="carrera"  required placeholder="Carrera" pattern="[A-Z a-z ñ]+"></td>
             <td><label for="Name">Cuatrimestre</label>
             <select name="cuatri">
               <option value="primero">Primero</option>
