@@ -38,7 +38,7 @@ if($usuario == null || $usuario= ''){
     </seccion>
     </header>
     <center>
-      <br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
       <?php
         $nombre= $_SESSION['nombre'];
         $apellido_p= $_SESSION['apellido_p'];
