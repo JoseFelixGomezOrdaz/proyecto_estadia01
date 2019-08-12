@@ -74,7 +74,7 @@ require '../../conexion.php';
           <?php
           }
         }else{
-          echo "ghvgvgv";
+          echo "<h1>No hay usuarios</h1>";
         }
         ?>
       </table>

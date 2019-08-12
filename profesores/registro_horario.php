@@ -46,34 +46,34 @@ if($usuario == null || $usuario= ''){
           <tr>
             <td><input type="text" name="grupo"  required placeholder="Grupo" pattern="[A-Z a-z 1-9]+"></td>
             <td><input type="text" name="materia"  required placeholder="Materia" pattern="[A-Z a-z]+"></td>
-            <td><input type="text" name="lunes_inicio"  required placeholder="Lunes hora de inicio" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="lunes_inicio"  required placeholder="Lunes hora de inicio" pattern="[AMam PMpm 0-9:x]+"></td>
           </tr>
           <tr>
-            <td><input type="text" name="lunes_termino"  required placeholder="Lunes hora de termino" pattern="[AMam PMpm 0-9:]+"></td>
-            <td><input type="text" name="lugar_lunes"  required  placeholder="Aula donde se impartira el lunes" pattern="[A-Z a-z 0-9]+"></td>
-            <td><input type="text" name="martes_inicio"  required placeholder="Martes hora de inicio" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="lunes_termino"  required placeholder="Lunes hora de termino" pattern="[AMam PMpm 0-9:x]+"></td>
+            <td><input type="text" name="lugar_lunes"  required  placeholder="Aula donde se impartira el lunes" pattern="[A-Z a-z 0-9:x]+"></td>
+            <td><input type="text" name="martes_inicio"  required placeholder="Martes hora de inicio" pattern="[AMam PMpm 0-9:x]+"></td>
           </tr>
           <tr>
-            <td><input type="text" name="martes_termino"  required placeholder="Martes hora de termino" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="martes_termino"  required placeholder="Martes hora de termino" pattern="[AMam PMpm 0-9:x]+"></td>
             <td><input type="text" name="lugar_martes"  required  placeholder="Aula donde se impartira el martes" pattern="[A-Z a-z 0-9]+"></td>
-            <td><input type="text" name="miercoles_inicio"  required placeholder="Miercoles hora de inicio" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="miercoles_inicio"  required placeholder="Miercoles hora de inicio" pattern="[AMam PMpm 0-9:x]+"></td>
           <tr>
-            <td><input type="text" name="miercoles_termino"  required placeholder="Miercoles hora de termino" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="miercoles_termino"  required placeholder="Miercoles hora de termino" pattern="[AMam PMpm 0-9:x]+"></td>
             <td><input type="text" name="lugar_miercoles"  required  placeholder="Aula donde se impartira el miercoles" pattern="[A-Z a-z 0-9]+"></td>
-            <td><input type="text" name="jueves_inicio"  required placeholder="Jueves hora de inicio" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="jueves_inicio"  required placeholder="Jueves hora de inicio" pattern="[AMam PMpm 0-9:x]+"></td>
           </tr>
           <tr>
-            <td><input type="text" name="jueves_termino"  required placeholder="Jueves hora de termino" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="jueves_termino"  required placeholder="Jueves hora de termino" pattern="[AMam PMpm 0-9:x]+"></td>
             <td><input type="text" name="lugar_jueves"  required  placeholder="Aula donde se impartira el jueves" pattern="[A-Z a-z 0-9]+"></td>
-            <td><input type="text" name="viernes_inicio"  required placeholder="Viernes hora de inicio" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="viernes_inicio"  required placeholder="Viernes hora de inicio" pattern="[AMam PMpm 0-9:x]+"></td>
           </tr>
           <tr>
-            <td><input type="text" name="viernes_termino"  required placeholder="Viernes hora de termino" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="viernes_termino"  required placeholder="Viernes hora de termino" pattern="[AMam PMpm 0-9:x]+"></td>
             <td><input type="text" name="lugar_viernes"  required  placeholder="Aula donde se impartira el viernes" pattern="[A-Z a-z 0-9]+"></td>
-            <td><input type="text" name="sabado_inicio"  required placeholder="Sabado hora de inicio" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="sabado_inicio"  required placeholder="Sabado hora de inicio" pattern="[AMam PMpm 0-9:x]+"></td>
           </tr>
           <tr>
-            <td><input type="text" name="sabado_termino"  required placeholder="Sabado hora de termino" pattern="[AMam PMpm 0-9:]+"></td>
+            <td><input type="text" name="sabado_termino"  required placeholder="Sabado hora de termino" pattern="[AMam PMpm 0-9:x]+"></td>
             <td><input type="text" name="lugar_sabado"  required  placeholder="Aula donde se impartira el sabado" pattern="[A-Z a-z 0-9]+"></td>
           </tr>
 

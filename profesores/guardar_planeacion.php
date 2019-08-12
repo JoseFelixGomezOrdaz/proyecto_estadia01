@@ -7,8 +7,8 @@ if($usuario == null || $usuario= ''){
 require '../conexion.php';
 $numero_unidad= $_POST['numero_unidad'];
 $nombre_unidad= $_POST['nombre_unidad'];
-$horas_practicas= $_POST['horas_practicas'];
-$horas_teoricas= $_POST['horas_teoricas'];
+$horas_practicas= (int) $_POST['horas_practicas'];
+$horas_teoricas= (int) $_POST['horas_teoricas'];
 $fecha_inicio_planeacion= $_POST['fecha_inicio_planeacion'];
 $fecha_termino_planeacion= $_POST['fecha_termino_planeacion'];
 $fecha_inicio_ejecucion= $_POST['fecha_inicio_ejecucion'];
@@ -19,15 +19,15 @@ $instrumentos_evaluacion= $_POST['instrumentos_evaluacion'];
 $evidencia= $_POST['evidencia'];
 $ponderacion= $_POST['ponderacion'];
 $observaciones= $_POST['observaciones'];
-
+$horas_totales=$horas_practicas + $horas_teoricas;
 $usuario= $_SESSION['username'];
 $consulta= "SELECT * FROM materia";
 $resultado= mysqli_query($conexion, $consulta);
 $id_materia=mysqli_num_rows($resultado);
 //INSERT INTO planeacion (id_materia, usuario, numero_unidad, nombre_unidad, horas_practicas, horas_teoricas, fecha_inic_planec, fecha_ter_planec, fecha_inic_ejec, fecha_ter_ejec, actividades_doc, actividades_estd, inst_evaluac, evidencia, ponderacion, observaciones)VALUES
 //(1, 1, '1', '$nombre_unidad', '23', '15', '2019-07-11', '2019-07-19', '2019-07-30', '2019-08-01', '$actividades_docente', '$actividades_estudiante', '$instrumentos', '$evidencia', '25', '$observaciones');
-$query= "INSERT INTO planeacion (id_materia, usuario, numero_unidad, nombre_unidad, horas_practicas, horas_teoricas, fecha_inic_planec, fecha_ter_planec, fecha_inic_ejec, fecha_ter_ejec, actividades_doc, actividades_estd, inst_evaluac, evidencia, ponderacion, observaciones)VALUES
-('$id_materia', '$usuario', '$numero_unidad', '$nombre_unidad', '$horas_practicas', '$horas_teoricas', '$fecha_inicio_planeacion', '$fecha_termino_planeacion',
+$query= "INSERT INTO planeacion (id_materia, usuario, numero_unidad, nombre_unidad, horas_practicas, horas_teoricas, horas_totales, fecha_inic_planec, fecha_ter_planec, fecha_inic_ejec, fecha_ter_ejec, actividades_doc, actividades_estd, inst_evaluac, evidencia, ponderacion, observaciones)VALUES
+('$id_materia', '$usuario', '$numero_unidad', '$nombre_unidad', '$horas_practicas', '$horas_teoricas', '$horas_totales', '$fecha_inicio_planeacion', '$fecha_termino_planeacion',
   '$fecha_inicio_ejecucion', '$fecha_termino_ejecucion', '$actividades_docente', '$actividades_estudiante', '$instrumentos_evaluacion', '$evidencia', '$ponderacion', '$observaciones')";
 if($resultado=mysqli_query($conexion, $query)){
   ?>
