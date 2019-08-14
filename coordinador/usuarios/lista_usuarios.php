@@ -58,7 +58,7 @@ if($usuario == null || $usuario= ''){
           <th>Opciones</th>
         </tr>
         <?php
-        $query= mysqli_query($conexion, "SELECT * FROM usuarios");
+        $query= mysqli_query($conexion, "SELECT * FROM usuarios WHERE tipo_usuario='profesor'");
         $resultado= mysqli_num_rows($query);
         if($resultado > 0){
           while ($datos= mysqli_fetch_array($query)) {?>

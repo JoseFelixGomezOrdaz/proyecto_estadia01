@@ -21,8 +21,8 @@ if($usuario == null || $usuario= ''){
       <div class="contenedor">
           <nav><ul>
           <li class="actual"><a href="inicio.php">Inicio</a></li>
-          <li><a href="usuarios/lista_usuarios.php">Usuarios</a></li>
-          <li><a href="mostrar_avances.php">Mostrar avances de maestros</a></li>
+          <li><a href="usuarios/lista_usuarios.php">Ver Maestros</a></li>
+          <li><a href="mostrar_avances.php">Mostrar avances</a></li>
           <li><a href="cambiar_password.php">Cambiar password</a></li>
           <li><a href="../cerrar.php">Cerrar sesion</a></li>
           </ul></nav>

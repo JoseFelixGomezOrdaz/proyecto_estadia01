@@ -36,7 +36,7 @@ require 'master.php';
         </tr>
         <?php
         $query= mysqli_query($conexion, "SELECT usuario, nombre, apellido_p, apellido_m, correo FROM usuarios
-    WHERE usuario LIKE '%".$busqueda."%' OR nombre LIKE '%".$busqueda."%' OR apellido_p LIKE '%".$busqueda."%' OR
+    WHERE tipo_usuario='profesor' AND LIKE '%".$busqueda."%' OR nombre LIKE '%".$busqueda."%' OR apellido_p LIKE '%".$busqueda."%' OR
     apellido_m LIKE '%".$busqueda."%' OR correo LIKE '%".$busqueda."%' ");
         $resultado= mysqli_num_rows($query);
         if($resultado > 0){
