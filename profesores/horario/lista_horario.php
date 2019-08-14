@@ -38,10 +38,7 @@ require '../../conexion.php';
     <br><br>
     <section class="contenedor_usuarios">
       <center> <h1>Lista de horario</h1> <center>
-      <form class="form_search" action="buscar_usuario.php" method="post">
-        <input type="text" name="busqueda" id="busqueda" required placeholder="Buscar">
-        <input type="submit" name="btn_buscar" value="Buscar" class="btn_search">
-      </form>
+      
       <br><br>
       <?php
       $usuario= $_SESSION['username'];
