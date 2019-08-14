@@ -1,6 +1,10 @@
 <?php
 require '../../conexion.php';
-require 'master.php';
+session_start();
+$usuario= $_SESSION['username'];
+if($usuario == null || $usuario= ''){
+    header("Location:index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -9,6 +13,26 @@ require 'master.php';
     <title>Lista de usuarios</title>
     <link rel="stylesheet" href="css/estilos.css">
   </head>
+  <header>
+    <div class="contenedor">
+        <nav><ul>
+        <li><a href="../inicio.php">Inicio</a></li>
+        <li><a href="lista_usuarios.php">Usuarios</a></li>
+        <li class="actual"><a href="buscar_usuario.php">Buscar usuario</a></li>
+        <li><a href="../registro_usuarios.php">Nuevo usuario</a></li>
+        <li><a href="../../cerrar.php">Cerrar sesion</a></li>
+        </ul></nav>
+
+      </div>
+    </div>
+     <seccion id="main-col">
+      <div class="contenedor">
+        <div class="logo">
+          <h1>Tracking Activities</h1>
+        </div>
+      </div>
+  </seccion>
+  </header>
   <body>
     <br><br>
     <section class="contenedor_usuarios">
