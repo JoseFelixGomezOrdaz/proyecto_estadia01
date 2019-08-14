@@ -1,5 +1,5 @@
 <?php
-require '../conexion.php';
+require '../../conexion.php';
 require 'master.php';
 ?>
 <!DOCTYPE html>
