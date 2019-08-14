@@ -7,7 +7,7 @@ require 'master.php';
   <head>
     <meta charset="utf-8">
     <title>Lista de usuarios</title>
-    <link rel="stylesheet" href="css/estilos1.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos3.css">
   </head>
   <body>
