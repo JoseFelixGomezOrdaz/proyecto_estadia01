@@ -35,7 +35,7 @@ ul{
     color: #fff
 }
 header{
-    background-color: #0070ee;
+    background-color: #6d7fff;
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
@@ -81,7 +81,7 @@ header a:hover{
 body{
   background: url(../img/foto1.jpeg);
   background-size: cover;
-  color: black;
+  color: white;
   font-size: 16px;
 }
 

@@ -14,8 +14,8 @@ if($usuario == null || $usuario= ''){
     <meta name="description" content="poyecto">
     <meta name="keywords" content="diceño web,desarrollo web, seo, posicionnamiento web">
     <title>Registro horio</title>
-    <link rel="stylesheet" href="../assets/css/estilos.css">
-    <link rel="stylesheet" href="../assets/css/estilos1.css">
+    <link rel="stylesheet" href="css/estilos3.css">
+    <link rel="stylesheet" href="css/estilos2.css">
   </head>
   <body>
     <header>

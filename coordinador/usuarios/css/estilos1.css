@@ -78,9 +78,9 @@ header a:hover{
 
 
 body{
-  background: #;
+  background: url(../img/foto1.jpeg);
   background-size: cover;
-  color: black;
+  color: white;
   font-size: 16px;
 }
 

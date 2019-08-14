@@ -23,6 +23,7 @@ if($usuario == null || $usuario= ''){
           <li class="actual"><a href="inicio.php">Inicio</a></li>
           <li><a href="registro_materia.php">Nueva planeacion</a></li>
           <li><a href="horario/lista_horario.php">Horario</a></li>
+          <li><a href="cambiar_password.php">Cambiar password</a></li>
           <li><a href="../cerrar.php">Cerrar sesion</a></li>
           </ul></nav>
 
@@ -32,6 +33,7 @@ if($usuario == null || $usuario= ''){
         <div class="contenedor">
           <div class="logo">
             <h1>Tracking Activities</h1>
+            <!--<h1>Profesor</h1>-->
           </div>
         </div>
     </seccion>

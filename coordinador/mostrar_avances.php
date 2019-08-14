@@ -6,6 +6,7 @@
     <!--<img src="assets/img/logo.jpeg" align="right" />-->
     <link rel="stylesheet" href="../assets/css/estilos.css">
     <link rel="stylesheet" href="../assets/css/estilos1.css">
+    <link rel="stylesheet" href="css/estilos2.css">
   </head>
 <?php
 session_start();
@@ -42,16 +43,18 @@ require '../conexion.php';
       //se obtiene todas las materias
       $query= mysqli_query($conexion, "SELECT * FROM materia");
       $resultado= mysqli_num_rows($query);
+      //echo "materias=$resultado";
       if($resultado > 0){
         while ($datos= mysqli_fetch_array($query)) {
-          $a=1;
           $id_materia= (int)$datos['id_materia'];
-          $id_materiaa= [$a,$id_materia];
-          $a= $a + 1;
+          //echo "id_materia=$id_materia";
+          $id_materiaa[]= $id_materia;
         }
       }
-      $total= count($id_materiaa);
-      for ($i = 0; $i < $total; $i++) {
+
+      //echo "materiasss=$total";
+      for ($i = 0; $i < count($id_materiaa); $i++) {
+        //echo "id_materiaI=$i";
         $id_materiia=$id_materiaa[$i];
         //echo "SELECT * FROM planeacion where id_materia=$id_materiia";
         //se obtiene el nombre de la materia

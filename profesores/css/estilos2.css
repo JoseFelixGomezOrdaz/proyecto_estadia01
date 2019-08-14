@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit--box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+    width: 110px;
+    height: 110px;
+
+}
+
+.logoh{
+    float: right;
+    width: 110px;
+    height: 110px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.botton1{
+    height: 38px;
+    background-color: #e8491d;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff
+}
+header{
+    background-color: #6d7fff;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #000557;
+
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    font: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+.titulo{
+    font-size: 35px;
+}
+header #marca{
+    float: left;
+
+}
+header #marca h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+/*menu*/
+header .resaltado, header .actual a{
+    color: #000;
+    font-weight: bold;
+}
+header a:hover{
+    color: #ccc;
+    font-weight: bold;
+}
+
+body{
+  background: #;
+  background-size: cover;
+  color: black;
+  font-size: 16px;
+}
+
+.wrap1
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.widget{
+  width: 40%;
+  margin: 2em;
+}
+
+.widget p{
+  color: #fff;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.fecha{
+  font-family: Arial;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0.3125rem;
+  background: rgba(0,0,0,.5);
+  padding: 20px;
+  width: 100%;
+}
+
+.reloj{
+  font-family: Arial;
+  width: 100%;
+  padding: 20px;
+  font-size: 4em;
+  text-align: center;
+  background: rgba( 0, 0, 0, .5);
+}
+
+.reloj .caja-segundos{
+  display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm{
+  font-size: 2rem;
+  display: block;
+}
+
+.h{
+  color: #000;
+}

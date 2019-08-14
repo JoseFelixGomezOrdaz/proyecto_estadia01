@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Inicio</title>
     <!--<img src="assets/img/logo.jpeg" align="right" />-->
-    <link rel="stylesheet" href="../assets/css/estilos.css">
-    <link rel="stylesheet" href="../assets/css/estilos1.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos1.css">
   </head>
 <?php
 session_start();
 $usuario= $_SESSION['username'];
 if($usuario == null || $usuario= ''){
-    header("Location:index.php");
+    header("Location:../index.php");
 }
 
 ?>
@@ -22,6 +22,8 @@ if($usuario == null || $usuario= ''){
           <nav><ul>
           <li class="actual"><a href="inicio.php">Inicio</a></li>
           <li><a href="usuarios/lista_usuarios.php">Usuarios</a></li>
+          <li><a href="mostrar_avances.php">Mostrar avances de maestros</a></li>
+          <li><a href="cambiar_password.php">Cambiar password</a></li>
           <li><a href="../cerrar.php">Cerrar sesion</a></li>
           </ul></nav>
 

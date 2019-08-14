@@ -11,8 +11,8 @@ if($usuario == null || $usuario= ''){
   <head>
     <meta charset="utf-8">
     <title>Registro materia</title>
-    <link rel="stylesheet" href="../assets/css/estilos.css">
-    <link rel="stylesheet" href="../assets/css/estilos1.css">
+    <link rel="stylesheet" href="css/estilos3.css">
+    <link rel="stylesheet" href="css/estilos2.css">
   </head>
   <body>
     <header>
