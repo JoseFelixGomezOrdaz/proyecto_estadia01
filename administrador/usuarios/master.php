@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    
+
     <link rel="stylesheet" href="css/estilos1.css">
   </head>
 <?php
@@ -19,8 +19,8 @@ if($usuario == null || $usuario= ''){
       <div class="contenedor">
           <nav><ul>
           <li class="actual"><a href="inicio.php">Inicio</a></li>
-          <li><a href="registro.php">Nuevo usuario</a></li>
-          <li><a href="cerrar.php">Cerrar sesion</a></li>
+          <li><a href="../registro_usuarios.php">Nuevo usuario</a></li>
+          <li><a href="../cerrar.php">Cerrar sesion</a></li>
           </ul></nav>
 
         </div>
