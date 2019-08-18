@@ -13,8 +13,12 @@ require '../../conexion.php';
 <?php
 session_start();
 $usuario= $_SESSION['username'];
+$tipo_usuario= $_SESSION['tipo_usuario'];
+if($tipo_usuario != 'coordinador'){
+  header("Location:../../index.php");
+}
 if($usuario == null || $usuario= ''){
-    header("Location:index.php");
+    header("Location:../../index.php");
 }
 
 ?>
@@ -44,7 +48,7 @@ if($usuario == null || $usuario= ''){
     <section class="contenedor_usuarios">
       <center> <h1>Lista de usuarios</h1> <center>
       <form class="form_search" action="buscar_usuario.php" method="post">
-        <input type="text" name="busqueda" id="busqueda" required placeholder="Buscar">
+        <input type="text" name="busqueda" id="busqueda" required placeholder="Buscar" class="btn_text">
         <input type="submit" name="btn_buscar" value="Buscar" class="btn_search">
       </form>
       <br><br>
@@ -84,5 +88,19 @@ if($usuario == null || $usuario= ''){
         ?>
       </table>
     </section>
+    <br><br><br><br><br><br><br><br>
+    <div class="footer-min-div">
+      <div class="footer-social-icons">
+        <center><h2 class="tituloo">Siguenos en:</h2></center>
+        <ul>
+          <li><a href="https://facebook.com" target="blank"><img src="../img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><img src="../img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="blank"><img src="../img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  <div class="footer-bottom">
+    <p>©Todos los derechos recervados Tracking Activities 2019</p>
+  </div>
   </body>
 </html>

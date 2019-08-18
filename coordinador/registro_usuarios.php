@@ -2,8 +2,12 @@
 require '../conexion.php';
 session_start();
 $usuario= $_SESSION['username'];
+$tipo_usuario= $_SESSION['tipo_usuario'];
+if($tipo_usuario != 'coordinador'){
+  header("Location:../index.php");
+}
 if($usuario == null || $usuario= ''){
-    header("Location:index.php");
+    header("Location:../index.php");
 }
 ?>
 <!DOCTYPE html>

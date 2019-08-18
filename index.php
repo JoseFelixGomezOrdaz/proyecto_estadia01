@@ -23,12 +23,26 @@ session_destroy();
     <center>
       <br><br><br><br>
       <form action="loguear.php" method="post">
-        <h1 class="h">Iniciar sesion</h1>
+        <h1 class="tituloo">Iniciar sesion</h1>
         <input type="text" name="usuario" required placeholder="Usuario">
         <input type="password" name="password" required placeholder="Password">
         <input type="submit" value="Iniciar">
 
       </form>
     </center>
+    <br><br><br><br>
+    <div class="footer-min-div">
+      <div class="footer-social-icons">
+        <center><h2 class="tituloo">Siguenos en:</h2></center>
+        <ul>
+          <li><a href="https://facebook.com" target="blank"><img src="assets/img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><img src="assets/img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="blank"><img src="assets/img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  <div class="footer-bottom">
+    <p>©Todos los derechos recervados Tracking Activities 2019</p>
+  </div>
   </body>
 </html>

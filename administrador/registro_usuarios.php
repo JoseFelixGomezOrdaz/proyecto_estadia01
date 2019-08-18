@@ -2,8 +2,12 @@
 require '../conexion.php';
 session_start();
 $usuario= $_SESSION['username'];
+$tipo_usuario= $_SESSION['tipo_usuario'];
+if($tipo_usuario != 'administrador'){
+  header("Location:../index.php");
+}
 if($usuario == null || $usuario= ''){
-    header("Location:index.php");
+    header("Location:../index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -41,18 +45,17 @@ if($usuario == null || $usuario= ''){
       <table border="0px">
         <thcad>
           <tr>
-            <td><input type="text" name="nombre" required placeholder="Nombre" pattern="[A-Z a-z ñóéí]+"></td>
-            <td><input type="text" name="apellido_p" required placeholder="Apellido paterno" pattern="[A-Z a-z ñóéí]+"></td>
-            <td><input type="text" name="apellido_m" required placeholder="Apellido materno" pattern="[A-Z a-z ñóéí]+"></td>
+            <td><input type="text" name="nombre" required placeholder="Nombre" pattern="[A-Z a-z ñÑóéí]+"></td>
+            <td><input type="text" name="apellido_p" required placeholder="Apellido paterno" pattern="[A-Z a-z ñÑóéí]+"></td>
+            <td><input type="text" name="apellido_m" required placeholder="Apellido materno" pattern="[A-Z a-z ñÑóéí]+"></td>
           </tr>
           <tr>
-            <td><label for="Name">Grado de studios</label>
+            <td><label for="Name">Grado de estudios</label>
             <select name="grado_estudios">
                <option value="Lic.">Lic.</option>
                <option value="Ing.">Ing.</option>
-               <option value="Mtro.">Mtro</option>
-               <option value="Mtr.">Mtr.</option>
-               <option value="Ph.D.">Ph.D.</option>Mtr.
+               <option value="Mtro.">Mtro.</option>
+               <option value="Dr.">Dr.</option>Mtr.
             </select></td>
             <td>
               <label for="Name">Tipo de usuario</label>
@@ -74,5 +77,18 @@ if($usuario == null || $usuario= ''){
           <input type="submit" value="Guardar">
       </center>
     </form>
+    <div class="footer-min-div">
+      <div class="footer-social-icons">
+        <h2>Siguenos en:</h2>
+        <ul>
+          <li><a href="https://facebook.com" target="blank"><img src="img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><img src="img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="blank"><img src="img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  <div class="footer-bottom">
+    <p>©Todos los derechos recervados Tracking Activities 2019</p>
+  </div>
     </body>
 </html>

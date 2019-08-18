@@ -10,6 +10,10 @@
 <?php
 session_start();
 $usuario= $_SESSION['username'];
+$tipo_usuario= $_SESSION['tipo_usuario'];
+if($tipo_usuario != 'coordinador'){
+  header("Location:../index.php");
+}
 if($usuario == null || $usuario= ''){
     header("Location:../index.php");
 }
@@ -21,8 +25,6 @@ if($usuario == null || $usuario= ''){
       <div class="contenedor">
           <nav><ul>
           <li><a href="inicio.php">Inicio</a></li>
-          <li><a href="registro_materia.php">Nueva planeacion</a></li>
-          <li><a href="horario/lista_horario.php">Horario</a></li>
           <li  class="actual"><a href="cambiar_password.php">Cambiar password</a></li>
           <li><a href="../cerrar.php">Cerrar sesion</a></li>
           </ul></nav>
@@ -57,5 +59,20 @@ if($usuario == null || $usuario= ''){
             <input type="submit" value="Guardar">
       </form>
     </center>
+
+    <br><br><br><br>
+    <div class="footer-min-div">
+      <div class="footer-social-icons">
+        <center><h2 class="tituloo">Siguenos en:</h2></center>
+        <ul>
+          <li><a href="https://facebook.com" target="blank"><img src="img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><img src="img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="blank"><img src="img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  <div class="footer-bottom">
+    <p>©Todos los derechos recervados Tracking Activities 2019</p>
+  </div>
   </body>
 </html>

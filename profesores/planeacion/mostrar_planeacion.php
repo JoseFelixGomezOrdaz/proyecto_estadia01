@@ -9,6 +9,10 @@
 <?php
 session_start();
 $usuario= $_SESSION['username'];
+$tipo_usuario= $_SESSION['tipo_usuario'];
+if($tipo_usuario != 'profesor'){
+  header("Location:../../index.php");
+}
 if($usuario == null || $usuario= ''){
     header("Location:../../index.php");
 }

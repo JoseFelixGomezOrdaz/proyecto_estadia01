@@ -38,7 +38,7 @@ require '../../conexion.php';
     <br><br>
     <section class="contenedor_usuarios">
       <center> <h1>Lista de horario</h1> <center>
-      
+
       <br><br>
       <?php
       $usuario= $_SESSION['username'];
@@ -100,5 +100,19 @@ require '../../conexion.php';
       </table>
 
     </section>
+    <br><br><br><br>
+    <div class="footer-min-div">
+      <div class="footer-social-icons">
+        <center><h2 class="tituloo">Siguenos en:</h2></center>
+        <ul>
+          <li><a href="https://facebook.com" target="blank"><img src="../img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><img src="../img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="blank"><img src="../img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  <div class="footer-bottom">
+    <p>©Todos los derechos recervados Tracking Activities 2019</p>
+  </div>
   </body>
 </html>

@@ -20,7 +20,6 @@ if($usuario == null || $usuario= ''){
         <li><a href="../inicio.php">Inicio</a></li>
         <li><a href="lista_usuarios.php">Usuarios</a></li>
         <li class="actual"><a href="buscar_usuario.php">Buscar usuario</a></li>
-        <li><a href="../registro_usuarios.php">Nuevo usuario</a></li>
         <li><a href="../../cerrar.php">Cerrar sesion</a></li>
         </ul></nav>
 
@@ -60,8 +59,8 @@ if($usuario == null || $usuario= ''){
         </tr>
         <?php
         $query= mysqli_query($conexion, "SELECT usuario, nombre, apellido_p, apellido_m, correo FROM usuarios
-    WHERE usuario LIKE '%".$busqueda."%' OR nombre LIKE '%".$busqueda."%' OR apellido_p LIKE '%".$busqueda."%' OR
-    apellido_m LIKE '%".$busqueda."%' OR correo LIKE '%".$busqueda."%' ");
+          WHERE usuario LIKE '%".$busqueda."%' OR nombre LIKE '%".$busqueda."%' OR apellido_p LIKE '%".$busqueda."%' OR
+          apellido_m LIKE '%".$busqueda."%' OR correo LIKE '%".$busqueda."%' ");
         $resultado= mysqli_num_rows($query);
         if($resultado > 0){
           while ($datos= mysqli_fetch_array($query)) {?>
@@ -91,5 +90,19 @@ if($usuario == null || $usuario= ''){
         ?>
       </table>
     </section>
+    <br><br><br><br>
+    <div class="footer-min-div">
+      <div class="footer-social-icons">
+        <center><h2 class="tituloo">Siguenos en:</h2></center>
+        <ul>
+          <li><a href="https://facebook.com" target="blank"><img src="../img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><img src="../img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="blank"><img src="../img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  <div class="footer-bottom">
+    <p>©Todos los derechos recervados Tracking Activities 2019</p>
+  </div>
   </body>
 </html>

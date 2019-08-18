@@ -5,7 +5,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .contenedor{
     width: 80%;
     margin: auto;
@@ -15,6 +14,8 @@
     float: left;
     width: 110px;
     height: 110px;
+    font-size: 23px;
+
 
 }
 
@@ -32,14 +33,15 @@ ul{
     background-color: #e8491d;
     padding-left: 20px;
     padding-right: 20px;
-    color: #fff
+    color: #fff;
+
 }
 header{
-    background-color: #002cab;
+    background-color: #ff7657;
     color: #fff;
     padding-top: 30px;
-    min-height: 70px;
-    border-bottom: 5px solid #000557;
+    min-height: 50px;
+    border-bottom: 10px solid #ffba5a;
 
 }
 header a{
@@ -47,14 +49,17 @@ header a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 header li{
     font: left;
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
 }
 .titulo{
-    font-size: 35px;
+    font-size: 40px;
+
 }
 header #marca{
     float: left;
@@ -69,11 +74,12 @@ header nav{
 }
 /*menu*/
 header .resaltado, header .actual a{
-    color: #000;
+    color: #ffba5a;
     font-weight: bold;
+
 }
 header a:hover{
-    color: #ccc;
+    color: #ffe837;
     font-weight: bold;
 }
 
@@ -81,11 +87,59 @@ header a:hover{
 body{
   background: url(../img/foto5.jpg);
   background-size: cover;
-  color: white;
-  font-size: 16px;
+  color: #fff;
+  font-size: 18px;
+  font-family: arial;
+}
+/* Footer */
+.footer-min-div{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ background: #d4d7dd;
+ padding: 20px 0px;
+}
+.tituloo{
+  color: #ff7657;
+}
+.footer-social-icons{
+ width: 100%;
+ height: 150px;
+ margin: auto;
+}
+.footer-social-icons ul{
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+}
+.footer-social-icons ul li{
+ display: inline-block;
+ width: 50px;
+ height: 50px;
+ margin: 0px 10px;
+ border-radius: 100%;
+ background: ;
+}
+.footer-social-icons ul li img{
+ border-radius: 100%;
+ color: #272727;
+ font-size: 25px;
+}
+.footer-bottom{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ background: #2b580c;
+ padding: 5px;
+ font-family: arial;
+ font-size: 16px;
+ text-align: center;
+ color: black;
+ font-weight: 600;
+ letter-spacing: 1px;
 }
 
-.wrap1
+.wrap{
   width: 90%;
   max-width: 1000px;
   margin: auto;

@@ -11,8 +11,12 @@
 <?php
 session_start();
 $usuario= $_SESSION['username'];
+$tipo_usuario= $_SESSION['tipo_usuario'];
+if($tipo_usuario != 'coordinador'){
+  header("Location:../index.php");
+}
 if($usuario == null || $usuario= ''){
-    header("Location:index.php");
+    header("Location:../index.php");
 }
 require '../conexion.php';
 ?>
@@ -91,9 +95,24 @@ require '../conexion.php';
             <td><?php echo "$porcentaje"; ?></td>
           </tr>
         </table>
+        <br>
       <?php
       }
       ?>
     </center>
+    <br><br><br><br>
+    <div class="footer-min-div">
+      <div class="footer-social-icons">
+        <center><h2 class="tituloo">Siguenos en:</h2></center>
+        <ul>
+          <li><a href="https://facebook.com" target="blank"><img src="img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><img src="img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="blank"><img src="img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  <div class="footer-bottom">
+    <p>©Todos los derechos recervados Tracking Activities 2019</p>
+  </div>
   </body>
 </html>
