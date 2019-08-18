@@ -65,9 +65,9 @@ if($usuario == null || $usuario= ''){
       <div class="footer-social-icons">
         <center><h2 class="tituloo">Siguenos en:</h2></center>
         <ul>
-          <li><a href="https://facebook.com" target="blank"><img src="../img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com" target="blank"><img src="../img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://instagram.com" target="blank"><img src="../img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://facebook.com" target="blank"><img src="img/facebook.png" alt="" width="60" height="60"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><img src="img/twitter.jpg" alt="" width="60" height="60"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com" target="blank"><img src="img/instagram.jpg" alt="" width="60" height="60"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div>
     </div>
